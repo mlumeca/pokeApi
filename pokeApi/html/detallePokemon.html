@@ -1,83 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle pokemon</title>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body class="d-flex flex-column justify-content-between min-vh-100">
-    <header >
-        <nav class="d-flex justify-content-center container-fluid">
-            <div class="ms-3 mt-1 position-absolute top-0 start-0">
-                <img src="../img/Sana_Ball.webp" width="70px"  alt="sana ball">
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalle pokemon</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body class="d-flex flex-column justify-content-between min-vh-100">
+        <header>
+            <nav class="d-flex justify-content-center container-fluid">
+                <div class="ms-3 mt-1 position-absolute top-0 start-0">
+                    <img src="../img/Sana_Ball.webp" width="70px" alt="sana ball">
+                </div>
 
-            <div class="d-flex">
-                <div class="btn d-flex mt-3 me-5 rounded-5 justify-content-between boton">
-                    <h3>Pokémon</h3>
-                    <div >
-                        <img src="../img/psyduck_icon-icons.com_67509.png" width="40px" alt="sana ball">
+                <div class="d-flex">
+                    <div class="btn d-flex mt-3 me-5 rounded-5 justify-content-between boton">
+                        <h3>Pokémon</h3>
+                        <div>
+                            <img src="../img/psyduck_icon-icons.com_67509.png" width="40px" alt="sana ball">
+                        </div>
                     </div>
-                </div>
-    
-                <div  class="btn d-flex mt-3 me-5 ms-5 rounded-5 justify-content-between boton">
-                    <h3>Ataques</h3>
-                    <div class="">
-                        <img src="../img/pokebola.png" width="40px"  alt="sana ball">
+
+                    <div class="btn d-flex mt-3 me-5 ms-5 rounded-5 justify-content-between boton">
+                        <h3>Ataques</h3>
+                        <div class>
+                            <img src="../img/pokebola.png" width="40px" alt="sana ball">
+                        </div>
                     </div>
+
+                    <div class="btn d-flex mt-3 ms-5 rounded-5 justify-content-between boton">
+                        <h3>Bayas</h3>
+                        <div>
+                            <img src="../img/Baya_Aranja_EP.png" width="40px" alt="sana ball">
+                        </div>
+                    </div>
+
                 </div>
-    
-                <div class="btn d-flex mt-3 ms-5 rounded-5 justify-content-between boton">
-                    <h3>Bayas</h3>
+
+                <div class="position-absolute top-0 end-0 me-3 mt-1">
+                    <img src="../img/Sana_Ball.webp" width="70px" alt="sana ball">
+                </div>
+            </nav>
+        </header>
+        <div class="row m-0 flex-grow-1 container-fluid">
+            <main>
+                <div class="d-flex justify-content-around mt-5 col-12">
+                    <div id="botonAnterior" class="btn d-flex mt-3 rounded-5">
+                        <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i> nº1025
+                            Pecharunt</h3>
+                    </div>
+
                     <div>
-                        <img src="../img/Baya_Aranja_EP.png" width="40px" alt="sana ball">
+                        <h1>Bulbasaur nº0001</h1>
+                    </div>
+
+                    <div id="botonSiguiente" class="btn d-flex mt-3 rounded-5 ">
+                        <h3 class="align-content-center me-2 ms-2 mt-2">nº1025 Pecharunt <i
+                                class="bi bi-caret-right-fill ms-2"></i></h3>
                     </div>
                 </div>
-    
-            </div>
-            
-            <div class="position-absolute top-0 end-0 me-3 mt-1">
-                <img src="../img/Sana_Ball.webp" width="70px"  alt="sana ball">
-            </div>
-        </nav>
-    </header>
-    <div class="row m-0 flex-grow-1 container-fluid">
-        <main >
-           <div class="d-flex justify-content-around mt-5">
-                <div id="botonAnterior" class="btn d-flex mt-3 rounded-5 ">
-                    <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i> nº1025 Pecharunt</h3>
-                 </div>
-    
-                <div>
-                    <h1>Bulbasaur nº0001</h1>
+
+                <div class="d-flex mt-5 col-12">
+                    <div class="col-6 text-center">
+                        <img src="../img/bulbasaur.png" alt>
+                    </div>
+
+                    <div class="col-6">
+                        <div id="tarjeta-detalle" class="rounded-5 mb-4">
+                            <div class="d-flex">
+                                <p class="tamayo-letra ms-4 mt-2">Categoría: Semilla</p>
+                                <p class="tamayo-letra ms-4 mt-2">Habilidad: Espesura</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="tamayo-letra ms-4 mt-4">Peso: 6.9kg</p>
+                                <p class="tamayo-letra ms-5 mt-4">Altura: 0.7m</p>
+                                <p class="tamayo-letra ms-5 mt-4">Exp base: 64</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="tamayo-letra ms-4 mt-4">Tipo:
+                                    <div class="rounded-5 planta text-center">
+                                        <p class="align-content-center ms-2 mt-2 me-2">
+                                            Planta
+                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.57437 15.1244C2.51259 15.0663 2.45149 15.007 2.3911 14.9466C-0.797032 11.7585 -0.797032 6.58953 2.3911 3.40142C5.57921 0.213283 15.7378 0 15.7378 0C15.7378 0 17.1245 11.7585 13.9363 14.9466C11.1049 17.7781 6.71096 18.0949 3.52992 15.8969L6.09309 12.7515L10.1905 11.8668L6.84582 11.5325L8.97144 9.36818L11.391 8.83813L9.47776 8.27151L11.391 4.82001L8.66958 7.87256L7.61866 6.38956L7.98861 8.83813L6.09309 10.975L5.21443 8.27148V11.8668L2.57437 15.1244Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="ms-3 rounded-5 veneno text-center">
+                                        <p class="align-content-center ms-2 mt-2 me-2">
+                                            Veneno
+                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_72_160)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.5338 11.5268C14.0486 10.3157 15 8.5657 15 6.61963C15 2.9637 11.6421 0 7.5 0C3.35786 0 0 2.9637 0 6.61963C0 8.49545 0.883995 10.189 2.30435 11.3936C2.21827 11.6908 2.17105 12.0141 2.17105 12.3521C2.17105 13.8145 3.0547 15 4.14475 15C4.85303 15 5.47418 14.4995 5.82237 13.7477C6.17057 14.4995 6.79172 15 7.5 15C8.14564 15 8.71887 14.5841 9.07895 13.9411C9.43904 14.5841 10.0123 15 10.6579 15C11.7479 15 12.6316 13.8145 12.6316 12.3521C12.6316 12.064 12.5972 11.7865 12.5338 11.5268ZM11.8421 6.75091C11.8421 8.60698 9.85389 10.1116 7.40133 10.1116C4.94874 10.1116 2.96054 8.60698 2.96054 6.75091C2.96054 4.89483 4.94874 3.39018 7.40133 3.39018C9.85389 3.39018 11.8421 4.89483 11.8421 6.75091Z"
+                                                        fill="black" />
+                                                </g>
+                                                <defs>
+                                                    <clippath id="clip0_72_160">
+                                                        <rect width="15" height="15" fill="white" />
+                                                    </clippath>
+                                                </defs>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                </p>
+                                <p class="tamayo-letra ms-5 mt-4">
+                                    Sexo:
+                                    <img src="../img/macho.png" width="25" alt>
+                                    <img src="../img/hembra.png" width="25" alt>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="estadisticas" class="rounded-5  text-center">
+                            <h4 class="pt-3">Estadíticas base</h4>
+
+                        </div>
+                    </div>
+
                 </div>
+            </main>
+        </div>
 
-                <div id="botonSiguiente" class="btn d-flex mt-3 rounded-5 ">
-                    <h3 class="align-content-center me-2 ms-2 mt-2">nº1025 Pecharunt <i class="bi bi-caret-right-fill ms-2"></i></h3>
-                </div>
-           </div>
+        <footer class="container-fluid">
+            <p>&nbsp</p>
+        </footer>
 
-           <div class="d-flex justify-content-around mt-5">
-                 <div>
-                    <img src="../img/bulbasaur.png"  alt="">
-                </div>
-
-                <div id="tarjeta-detalle" class="d-flex rounded-5">
-                   <p>Categoría: Semilla</p>
-                </div>
-           </div>
-            
-
-         </main>
-    </div>
-
-    <footer class="container-fluid">
-        <p>&nbsp</p>
-    </footer>
-
-</body>
+    </body>
 </html>
