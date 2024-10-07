@@ -3,6 +3,10 @@ nav {
     height: 80px;
 }
 
+body {
+    min-height: min-content;
+}
+
 .boton {
     background-color: #EFD4AB !important;
     width: 300px;
@@ -17,7 +21,7 @@ nav {
 
 footer {
     background-color: #F1DCEC !important;
-    height: 60px;
+    height: 70px;
 }
 
 
@@ -138,20 +142,18 @@ footer {
     float: left;
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 400px;
     left: 14px;
-    top: 353px;
+    top: 100px;
     float: left;
     padding: 20;
 }
 
 .pokemon-sprite {
-    display: grid;
-    position: absolute;
-    width: 215px;
-    height: 215px;
-    left: 61px;
-    top: -160px;
+
+    width: 250px;
+    height: 250px;
+
 }
 
 .pokemon-name {
@@ -164,4 +166,5 @@ footer {
     text-align: center;
     color: black;
     padding: 10px;
+    text-transform: capitalize;
 }
