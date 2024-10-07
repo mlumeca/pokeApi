@@ -21,8 +21,8 @@ $(document).ready(function () {
                     <div class="pokemon-card">
                         <a class="text-decoration-none" href="detail.html?id=${pokemonId}">
                             <div>
-                                <img class="pokemon-sprite"
-                                    src="https://raw.githubusercontent.com/PokeAPI/sprites/refs/heads/master/sprites/pokemon/${pokemonId}.png" />
+                                <img class="pokemon-sprite" 
+                                    src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${pokemonId.padStart(3, '0')}.png" />
                             </div>
                             <div class="pokemon-name ">
                                 <p class="mt-3">${pokemon.name}</p>
