@@ -41,7 +41,78 @@ $(document).ready(function () {
 
     });
   }
+
+  function fondoTipo(pokemon) {
+
+    var tipo = pokemon.type[0].type.name;
+    var fondo = '';
+
+    switch (tipo) {
+      case 'grass':
+        colorBorde = '#5CBE64';
+        break;
+      case 'fire':
+        colorBorde = '#FBAE46';
+        break;
+      case 'water':
+        colorBorde = '#6CBDE4';
+        break;
+      case 'poison':
+        colorBorde = '#C261D4';
+        break;
+      case 'bug':
+        colorBorde = '#AFC836';
+        break;
+      case 'ground':
+        colorBorde = '#D29463';
+        break;
+      case 'dark':
+        colorBorde = '#9298A4';
+        break;
+      case 'electric':
+        colorBorde = '#FBE273';
+        break;
+      case 'fairy':
+        colorBorde = '#F3A7E7';
+        break;
+      case 'fighting':
+        colorBorde = '#E74347';
+        break;
+      case 'ghost':
+        colorBorde = '#7773D4';
+        break;
+      case 'ice':
+        colorBorde = '#8CDDD4';
+        break;
+      case 'normal':
+        colorBorde = '#A3A49E';
+        break;
+      case 'psychic':
+        colorBorde = '#FE9F92';
+        break;
+      case 'rock':
+        colorBorde = '#D7CD90'
+        break;
+      case 'steel':
+        colorBorde = '#58A6AA';
+        break;
+      case 'dragon':
+        colorBorde = '#0180C7';
+        break;
+      case 'flying':
+        colorBorde = '#A6C2F2';
+        break;
+      default:
+        colorBorde = '#000000';
+        break;
+    }
+
+    return colorBorde;
+
+  }
 });
+
+
 
 
 
