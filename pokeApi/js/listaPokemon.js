@@ -16,7 +16,7 @@ $(document).ready(function () {
         var template = `
                 <div class="d-flex justify-content-around col-3">
                     <div class="pokemon-card text-center">
-                        <a class="text-decoration-none" href="detail.html?id=${pokemonId}">
+                        <a class="text-decoration-none" href="detallePokemon.html?id=${pokemonId}">
                             <div>
                                 <img class="pokemon-sprite" 
                                     src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/${pokemonId.padStart(3, '0')}.png" />

@@ -139,12 +139,10 @@ footer {
 }
 
 .pokemon-card {
-    float: left;
     position: relative;
     width: 300px;
     height: 400px;
     left: 14px;
-    float: left;
 }
 
 .pokemon-sprite {
