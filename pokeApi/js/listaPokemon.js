@@ -1,5 +1,11 @@
 $(document).ready(function () {
   getPokemonListV2();
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".dropdown-menu li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
 
   function getPokemonListV2() {
 
@@ -14,7 +20,7 @@ $(document).ready(function () {
         var pokemonId = pokemon.url.split("/")[6];
 
         var template = `
-                <div class="d-flex justify-content-around col-3">
+                <div class="d-flex justify-content-around col-3 mt-5">
                     <div class="pokemon-card text-center">
                         <a class="text-decoration-none" href="detallePokemon.html?id=${pokemonId}">
                             <div>
