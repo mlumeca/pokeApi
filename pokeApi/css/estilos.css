@@ -144,16 +144,12 @@ footer {
     width: 300px;
     height: 400px;
     left: 14px;
-    top: 100px;
     float: left;
-    padding: 20;
 }
 
 .pokemon-sprite {
-
-    width: 250px;
-    height: 250px;
-
+    width: 180px;
+    height: 180px;
 }
 
 .pokemon-name {
@@ -165,6 +161,6 @@ footer {
     line-height: 42px;
     text-align: center;
     color: black;
-    padding: 10px;
+    padding: 20px;
     text-transform: capitalize;
 }

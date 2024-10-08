@@ -1,11 +1,9 @@
 $(document).ready(function () {
   getPokemonListV2();
 
-
-
   function getPokemonListV2() {
 
-    $("#listaPokemon").html("<img src='loading.gif' />");
+    $("#listaPokemon");
     $.ajax({
       url: "https://pokeapi.co/api/v2/pokemon",
       method: "GET",
@@ -17,8 +15,7 @@ $(document).ready(function () {
 
         var template = `
                 <div class="d-flex justify-content-around col-3">
-
-                    <div class="pokemon-card">
+                    <div class="pokemon-card text-center">
                         <a class="text-decoration-none" href="detail.html?id=${pokemonId}">
                             <div>
                                 <img class="pokemon-sprite" 
