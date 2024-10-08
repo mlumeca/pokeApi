@@ -20,7 +20,7 @@ $(document).ready(function () {
         var pokemonId = pokemon.url.split("/")[6];
 
         var template = `
-                <div class="d-flex justify-content-around col-3 mt-5">
+                <div class="d-flex justify-content-around col custom-col mt-5">
                     <div class="pokemon-card text-center">
                         <a class="text-decoration-none" href="detallePokemon.html?id=${pokemonId}">
                             <div>
