@@ -139,12 +139,9 @@ footer {
 }
 
 .pokemon-card {
-    float: left;
     position: relative;
     width: 300px;
     height: 400px;
-    left: 14px;
-    float: left;
 }
 
 .pokemon-sprite {
@@ -164,3 +161,20 @@ footer {
     padding: 20px;
     text-transform: capitalize;
 }
+
+#pokedex{
+    font-size: 60px;
+}
+
+
+.tipos{
+    margin-left: 4%;
+}
+
+#myInput {
+    padding: 20px;
+    margin-top: -6px;
+    border: 0;
+    border-radius: 0;
+    background: #f1f1f1;
+  }

@@ -49,7 +49,23 @@
     </header>
 
     <main>
-      <h1 class="text-center mt-">Pokedex</h1>
+      <div>
+        <h1 id="pokedex" class="text-center mt-5">Pokedex</h1>
+          <div class="dropdown tipos">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <input class="form-control" id="myInput" type="text" placeholder="Search..">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">Angular</a></li>
+            </ul>
+          </div>
+      </div>
+      
       <div class="container-fluid">
         <div class="row" id="listaPokemon"></div>
       </div>
