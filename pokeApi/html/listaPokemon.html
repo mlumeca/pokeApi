@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista pokémon</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
   </head>
   <body>
     <header>
@@ -49,26 +55,46 @@
     </header>
 
     <main>
-      <div>
-        <h1 id="pokedex" class="text-center mt-5">Pokedex</h1>
-          <div class="dropdown tipos">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <input class="form-control" id="myInput" type="text" placeholder="Search..">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-              <li><a href="#">jQuery</a></li>
-              <li><a href="#">Bootstrap</a></li>
-              <li><a href="#">Angular</a></li>
+      <div class="d-flex justify-content-between mt-5">
+        <div class="dropdown col-2 tipos">
+          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+            Tipos
+          </button>
+          <ul class="dropdown-menu w-auto">
+            <ul class="row list-unstyled ms-4 me-4 mt-2">
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Planta</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Hielo</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Acero</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Lucha</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Agua</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Normal</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Bicho</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Psíquico</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Dragón</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Roca</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Eléctrico</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Siniestro</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Fantasma</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Tierra</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Fuego</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Veneno</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Hada</a></li>
+              <li class="col-6 col-3 pb-2"><a class="dropdown-item" href="#">Volador</a></li>
             </ul>
-          </div>
+          </ul>
+
+        </div>
+        <h1 id="pokedex" class="text-center mt-5">Pokedex</h1>
+
+        <form class="d-flex buscar">
+          <input class="form-control h-25" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn h-25 border" type="submit"><i class="bi bi-search"></i></button>
+        </form>
       </div>
-      
       <div class="container-fluid">
         <div class="row" id="listaPokemon"></div>
       </div>
+
     </main>
 
     <footer class="container-fluid">

@@ -9,17 +9,17 @@ $(document).ready(function () {
 
     $("#detallePokemon");
     $.ajax({
-      url: "https://pokeapi.co/api/v2/pokemon",
-      method: "GET",
+        url: "https://pokeapi.co/api/v2/pokemon",
+        method: "GET",
     }).done(function (pokemon) {
 
 
         // Este bucle hay que cambiarlo 
-      var listadoPomemon = pokemon.results;
-      listadoPomemon.forEach(function (pokemon) {
-        var pokemonId = pokemon.url.split("/")[6];
+        var listadoPomemon = pokemon.results;
+        listadoPomemon.forEach(function (pokemon) {
+            var pokemonId = pokemon.url.split("/")[6];
 
-        var template = `
+            var template = `
                 <div class="d-flex justify-content-around mt-5 col-12">
                     <div id="botonAnterior" class="btn d-flex mt-3 rounded-5">
                         <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i> nº${pokemonId - 1}
@@ -99,7 +99,7 @@ $(document).ready(function () {
 
                 </div>
                 `;
-        $('#listaPokemon').append(template);
-      });
+            $('#listaPokemon').append(template);
+        });
     });
 });
