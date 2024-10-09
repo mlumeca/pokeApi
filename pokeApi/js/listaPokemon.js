@@ -13,6 +13,7 @@ $(document).ready(function () {
     $.ajax({
       url: "https://pokeapi.co/api/v2/pokemon",
       method: "GET",
+      
     }).done(function (pokemon) {
 
       var listadoPomemon = pokemon.results;
@@ -42,6 +43,28 @@ $(document).ready(function () {
     });
   }
 
+  tiposEspayol();
+
+  function tiposEspayol(){
+
+    $("#tipoPoke");
+    $.ajax({
+      url: "https://pokeapi.co/api/v2/type",
+      method: "GET",
+      
+    }).done(function (tipoPokemon) {
+      var tipo = tipoPokemon.results;
+      tipo.forEach(function (tipoPokemon) {
+        
+        var template = `
+                 <li class="col-6 col-3 pb-2"><a class="dropdown-item text-capitalize" href="#">${tipoPokemon.name}</a></li>
+                `;
+        $('#tipoPoke').append(template);
+      });
+
+    });
+  }
+
   function fondoTipo(pokemon) {
 
     var tipo = pokemon.type[0].type.name;
@@ -49,65 +72,65 @@ $(document).ready(function () {
 
     switch (tipo) {
       case 'grass':
-        colorBorde = '#5CBE64';
+        fondo = '#5CBE64';
         break;
       case 'fire':
-        colorBorde = '#FBAE46';
+        fondo = '#FBAE46';
         break;
       case 'water':
-        colorBorde = '#6CBDE4';
+        fondo = '#6CBDE4';
         break;
       case 'poison':
-        colorBorde = '#C261D4';
+        fondo = '#C261D4';
         break;
       case 'bug':
-        colorBorde = '#AFC836';
+        fondo = '#AFC836';
         break;
       case 'ground':
-        colorBorde = '#D29463';
+        fondo = '#D29463';
         break;
       case 'dark':
-        colorBorde = '#9298A4';
+        fondo = '#9298A4';
         break;
       case 'electric':
-        colorBorde = '#FBE273';
+        fondo = '#FBE273';
         break;
       case 'fairy':
-        colorBorde = '#F3A7E7';
+        fondo = '#F3A7E7';
         break;
       case 'fighting':
-        colorBorde = '#E74347';
+        fondo = '#E74347';
         break;
       case 'ghost':
-        colorBorde = '#7773D4';
+        fondo = '#7773D4';
         break;
       case 'ice':
-        colorBorde = '#8CDDD4';
+        fondo = '#8CDDD4';
         break;
       case 'normal':
-        colorBorde = '#A3A49E';
+        fondo = '#A3A49E';
         break;
       case 'psychic':
-        colorBorde = '#FE9F92';
+        fondo = '#FE9F92';
         break;
       case 'rock':
-        colorBorde = '#D7CD90'
+        fondo = '#D7CD90'
         break;
       case 'steel':
-        colorBorde = '#58A6AA';
+        fondo = '#58A6AA';
         break;
       case 'dragon':
-        colorBorde = '#0180C7';
+        fondo = '#0180C7';
         break;
       case 'flying':
-        colorBorde = '#A6C2F2';
+        fondo = '#A6C2F2';
         break;
       default:
-        colorBorde = '#000000';
+        fondo = '#F0EFEE';
         break;
     }
 
-    return colorBorde;
+    return fondo;
 
   }
 });

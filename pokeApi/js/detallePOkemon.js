@@ -16,18 +16,21 @@ $(document).ready(function () {
         method: "GET",
     }).done(function (pokemon) {
         var template = `
-            <div class="d-flex justify-content-around mt-5 col-12">
+            <div class="d-flex justify-content-around mt-5 col-12 text-capitalize">
                 <div id="botonAnterior" class="btn d-flex mt-3 rounded-5">
-                    <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i> nº${pokemon.id - 1}</h3>
+                    <h3 class="align-content-center ms-2 mt-2 me-2"><i class="bi bi-caret-left-fill me-2"></i>${pokemon.name}    nº${pokemon.id - 1} </h3>
                 </div>
 
                 <div>
                     <h1>${pokemon.name} nº${pokemon.id}</h1>
                 </div>
 
-                <div id="botonSiguiente" class="btn d-flex mt-3 rounded-5">
-                    <h3 class="align-content-center me-2 ms-2 mt-2">nº${pokemon.id + 1} ${pokemon.name}</h3>
-                </div>
+                <a class="text-decoration-none" href="../detallePokemon.html?id=${pokemonId}">
+                    <div id="botonSiguiente" class="btn d-flex mt-3 rounded-5">
+                        <h3 class="align-content-center me-2 ms-2 mt-2">nº${pokemon.id +1} ${pokemon.name}<i class="bi bi-caret-right-fill ms-2"></i></h3>
+                    </div>
+                </a>
+                
             </div>
 
             <div class="d-flex mt-5 col-12">
@@ -51,7 +54,7 @@ $(document).ready(function () {
                             ${pokemon.types.map(type => {
                                 const tipoEnEspanol = tipoTraducciones[type.type.name] || type.type.name;
                                 
-                                return `<span class="badge bg-success me-2">${tipoEnEspanol}</span>`;
+                                return `<span class="badge bg-success me-2 mt-2">${tipoEnEspanol}</span>`;
                             }).join('')}
                             </p>
                             <p class="tamayo-letra ms-5 mt-4">
@@ -61,14 +64,14 @@ $(document).ready(function () {
                             </p>
                         </div>
                     </div>
-                    <div id="estadisticas" class="rounded-5 text-center">
-                        <h4 class="pt-3">Estadísticas base</h4>
-                        <p>HP: ${pokemon.stats[0].base_stat}</p>
-                        <p>Ataque: ${pokemon.stats[1].base_stat}</p>
-                        <p>Defensa: ${pokemon.stats[2].base_stat}</p>
-                        <p>Ataque especial: ${pokemon.stats[3].base_stat}</p>
-                        <p>Defensa especial: ${pokemon.stats[4].base_stat}</p>
-                        <p>Velocidad: ${pokemon.stats[5].base_stat}</p>
+                    <div id="estadisticas" class="rounded-5">
+                        <h4 class="pt-3 text-center">Estadísticas base</h4>
+                        <p class="ms-4">HP: ${pokemon.stats[0].base_stat}</p>
+                        <p class="ms-4">Ataque : ${pokemon.stats[1].base_stat}</p>
+                        <p class="ms-4">Defensa: ${pokemon.stats[2].base_stat}</p>
+                        <p class="ms-4">Ataque especial: ${pokemon.stats[3].base_stat}</p>
+                        <p class="ms-4">Defensa especial: ${pokemon.stats[4].base_stat}</p>
+                        <p class="ms-4">Velocidad: ${pokemon.stats[5].base_stat}</p>
                     </div>
                 </div>
             </div>
