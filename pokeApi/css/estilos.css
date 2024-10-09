@@ -297,3 +297,7 @@ li>a.dropdown-item {
     background-color: #EA91E8;
     color: #000000;
 }
+
+.pokemon-btn {
+    color: black !important;
+}
