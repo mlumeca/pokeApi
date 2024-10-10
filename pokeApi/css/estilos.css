@@ -230,7 +230,6 @@ li>a.dropdown-item {
 .pokemon-name.hover-electric:hover {
     background-color: #F4D13B;
     color: #000000;
-    /* Cambiar el color del texto a negro para mejor legibilidad */
 }
 
 .pokemon-name.hover-ice:hover {
